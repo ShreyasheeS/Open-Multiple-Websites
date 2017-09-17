@@ -6,8 +6,6 @@ your frequently visted website(s) with a single click
 And not just that, it also remember your last opened links
 by storing your urls in chrome storage
 
-Date Created: 27th June, 2015
-
 */
 
 // open pages in new tabs
