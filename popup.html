@@ -2,17 +2,16 @@
 <html>
  <title>Open Multiple links</title>
  <head>
+  <link rel="stylesheet" href="popup.css">
  </head>
-
  <body>
- 	<script type="text/javascript" src = "popup.js"></script>
-   <h3> <center> Paste the links below  </center> </h3>
-   <hr>
-   <textarea rows = "10" cols = "80" id= "urls"> </textarea>
-   <br>
-
-  <button type="submit" align="center" style="width:470px;" id="button">Submit</button>
-
+   <h1 class="mat-shadow">Paste links below</h1>
+   <div>
+    <textarea rows="10" cols="60" id="urls"> </textarea>
+    <div class="text-right">
+      <button id="button" type="button" class="mat-shadow">Submit</button>
+    </div>
+   </div>
+   <script type="text/javascript" src = "popup.js"></script>
  </body>
-
 </html>
