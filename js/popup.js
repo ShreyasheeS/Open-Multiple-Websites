@@ -60,10 +60,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   // add an event listener to load url when button is clicked
-  document.getElementById('button').addEventListener('click', loadUrls);
+  document.getElementById('button-open-links').addEventListener('click', loadUrls);
 
   // add an event listener to save url when button is clicked
-  document.getElementById('button').addEventListener('click', saveUrls);
+  document.getElementById('button-open-links').addEventListener('click', saveUrls);
 
     // reload the urls in the browser
     var urls = localStorage['urls'];

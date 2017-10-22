@@ -1,17 +1,65 @@
 <!DOCTYPE html>
 <html>
- <title>Open Multiple links</title>
- <head>
-  <link rel="stylesheet" href="popup.css">
- </head>
- <body>
-   <h1 class="mat-shadow">Paste links below</h1>
-   <div>
-    <textarea rows="10" cols="60" id="urls"> </textarea>
-    <div class="text-right">
-      <button id="button" type="button" class="mat-shadow">Submit</button>
+
+  <title>Open Multiple links</title>
+  <head>
+  </head>
+  <body>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <script type="text/javascript" src="js/material.min.js"></script>
+    <script type="text/javascript" src="js/popup.js"></script>
+    <!-- Material layout -->
+    <div class="mdl-layout mdl-js-layout">
+      <!-- Main content layout -->
+      <main class="mdl-layout__content">
+        <div class="page-content">
+
+          <!-- Header -->
+          <header class="mdl-layout__header">
+              <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Open Multiple Webpages</span>
+              </div>
+          </header>
+
+          <!-- Tabs navigation -->
+          <div class="mdl-tabs mdl-js-tabs">
+            <div class="mdl-tabs__tab-bar">
+                <a href="#text-panel" class="mdl-tabs__tab is-active">Pages</a>
+            </div>
+
+            <!-- Tabs panels -->
+            <div class="mdl-tabs__panel is-active" id="text-panel">
+              <div class="mdl-textfield mdl-js-textfield">
+                <textarea
+                    class="mdl-textfield__input"
+                    type="text"
+                    rows= "3"
+                    autocomplete="off"
+                    autocorrect="off"
+                    autocapitalize="off"
+                    spellcheck="false"
+                    id="urls"></textarea>
+                <label class="mdl-textfield__label" for="urls">Paste links here</label>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Sticky footer -->
+        <footer class="sticky--footer">
+          <nav>
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent"
+                      type="submit"
+                      id="button-open-links">open</button>
+          </nav>
+        </footer>
+      </main>
     </div>
-   </div>
-   <script type="text/javascript" src = "popup.js"></script>
- </body>
+
+  </body>
 </html>
