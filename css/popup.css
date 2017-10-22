@@ -40,8 +40,8 @@ body, html {
 
 /* This makes popup wrap the main layout */
 .page-content {
-  min-width: 500px;
-  margin-bottom: -12px;
+  min-width: 700px;
+  margin-bottom: -6px;
 }
 
 #urls {
@@ -50,7 +50,29 @@ body, html {
   resize: vertical;
 }
 
-#button-open-links {
+#history-panel {
+  margin: 16px;
+}
+
+#history-table {
+  width: 100%;
+}
+
+.page-title {
+  max-width: 150px;
+  overflow: hidden;
+}
+
+.page-url {
+  max-width: 350px;
+  overflow: hidden;
+}
+
+.footer-button {
   float: right;
   margin: 8px;
+}
+
+.display-none {
+  display: none;
 }

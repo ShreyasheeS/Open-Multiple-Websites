@@ -27,7 +27,8 @@
           <!-- Tabs navigation -->
           <div class="mdl-tabs mdl-js-tabs">
             <div class="mdl-tabs__tab-bar">
-                <a href="#text-panel" class="mdl-tabs__tab is-active">Pages</a>
+                <a href="#text-panel" class="mdl-tabs__tab is-active" id="text-tab">Pages</a>
+                <a href="#history-panel" class="mdl-tabs__tab" id="history-tab">History</a>
             </div>
 
             <!-- Tabs panels -->
@@ -42,8 +43,11 @@
                     autocapitalize="off"
                     spellcheck="false"
                     id="urls"></textarea>
-                <label class="mdl-textfield__label" for="urls">Paste links here</label>
+                <label class="mdl-textfield__label" id="urls-hint" for="urls">Paste links here</label>
               </div>
+            </div>
+
+            <div class="mdl-tabs__panel" id="history-panel">
             </div>
 
           </div>
@@ -53,7 +57,11 @@
         <!-- Sticky footer -->
         <footer class="sticky--footer">
           <nav>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent"
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent footer-button display-none"
+            type="submit"
+            id="button-add-links">add to list</button>
+
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent footer-button"
                       type="submit"
                       id="button-open-links">open</button>
           </nav>
