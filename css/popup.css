@@ -1,0 +1,56 @@
+body, html {
+  height: unset;
+  min-height: unset;
+}
+
+.mdl-layout__header {
+  display: block;
+}
+
+.mdl-layout__header-row {
+  padding: 0 16px 0 16px;
+}
+
+.mdl-tabs__tab-bar {
+  display: block;
+}
+
+.mdl-tabs__panel {
+  margin: 8px;
+}
+
+.mdl-layout__container {
+  position: unset;
+}
+
+.mdl-textfield {
+  width: 100%;
+  padding: 0;
+}
+
+.mdl-textfield__label {
+  top: 2px;
+  width: unset;
+  padding: 0;
+}
+
+.mdl-textfield__label:after {
+  bottom: 0px;
+}
+
+/* This makes popup wrap the main layout */
+.page-content {
+  min-width: 500px;
+  margin-bottom: -12px;
+}
+
+#urls {
+  min-height: 200px;
+  max-height: 450px;
+  resize: vertical;
+}
+
+#button-open-links {
+  float: right;
+  margin: 8px;
+}
